@@ -1,0 +1,176 @@
+:root{
+    --mainBlack: rgb(0, 0, 0);
+    --mainGold: rgb(220, 177, 4);
+    --mainBlue: rgb(1, 23, 47);
+}
+body{
+    font-family: "Albert Sans", sans-serif;
+    font-weight: 300;
+    color:white;
+    background-color: var(--mainBlack);
+}
+h1{
+    font-weight: 400;
+    font-size: 2em;
+}
+.nav{
+    background-color:var(--mainBlack);
+    color:white;
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 3%;
+    z-index: 5000;
+    font-size: 2.05em;
+}
+.nav h1{
+    margin-bottom: 0px;
+    margin-top: 1vh;
+}
+.title{
+    text-align: center;
+}
+
+.item-group{
+    display:flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 4vw;
+}
+.welcome{
+    text-align: center;
+    margin-top: 5vh;
+    font-weight: 300;
+
+}
+.spacer{
+    height: 15vh;
+    display: block;
+}
+form{
+    font-family: "Cabin", sans-serif;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding:2%;
+    padding-top: 4%;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(173, 173, 173);
+    box-sizing: border-box;
+    
+}
+.about{
+    text-align: center;
+    margin: 5vh 2%;
+    font-weight: 300;
+}
+.Atitle{
+    font-size:3rem;
+    text-align: center;
+}
+form input{
+    outline: none;
+    margin: 1% 1%;
+    height: 6vh;
+    width:40vw;
+    font-size: 1.5em;
+    border-radius: 20px;
+    padding-left:5%;
+    border-style: none;
+}
+form button{
+    font-size: 1.5em;
+    height:5vh;
+    background-color: var(--mainGold);
+    color: var(--mainBlack);
+    border-style: none;
+    width:60%;
+    border-radius: 500px;
+    margin: 2%;
+}
+.button{
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 1.25em;
+    
+}
+.confr{
+    color:green;
+}
+.error{
+    color:red;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    object-fit: contain;
+}
+.Sections{
+    font-size:3rem;
+    text-align: center;
+}
+subdivisions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.subImage{
+    width: 50%;
+}
+.noshow{
+    display: none;
+}
+.hinweis{
+    text-align: center;
+    font-size: 1.2em;
+    margin: 1%;
+    color:black;
+}
+@media screen and (max-width: 1200px){
+    .logo{
+        width: 80%;
+    }
+    .nav {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1000px){
+    .logo{
+        width: 100%;
+        border-radius: 0%;
+    }
+    form {
+        width: 98%;
+        border-radius: 10px;
+    }
+    form input {
+        width: 96%;
+        border-radius: 10px;
+    }
+    form button{
+        width:80%;
+    }
+}
+@media screen and (max-width: 550px){
+    .logo{
+        width: 100%;
+    }
+    .nav{
+        font-size: 1em;
+    }
+    .Sections{
+        font-size: 2em;
+    }
+}
