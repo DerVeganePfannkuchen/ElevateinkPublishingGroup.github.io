@@ -102,7 +102,9 @@ form button{
     text-align: center;
     margin-top: 2%;
     font-size: 1.25em;
-    
+}
+form button:hover{
+    cursor:pointer;
 }
 .confr{
     color:green;
